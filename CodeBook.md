@@ -20,10 +20,10 @@ In an experiment, raw data was collected from **30 subjects** (volunteers), perf
 7. Create an tidy data set '.txt' file with the average of each variable for each activity and each subject.
 
 ### Output
-A tidy dataset ("tidydata.txt") is a 10299x88 data frame with columns as follows: 
+A tidy dataset ("tidydata.txt") is a 180x88 data frame with columns as follows: 
 
-* activity : activity name
 * subject_id : subject Id
+* activity : activity name
 * 86 mean and standard deviations average measures with feature names as column headers
 
 ## Variables
