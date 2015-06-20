@@ -1,5 +1,5 @@
 ## Getting and Cleaning Data Course Project
-Coursework Assignment for Getting and Cleaning Data (JHU) on [coursera.org](http://www.coursera.org/courses/getdata/)  
+Coursework Assignment for Getting and Cleaning Data (JHU) on [coursera.org](http://www.coursera.org/course/getdata/)  
   
 The R script in this repo is designed to tidy Samsung wearable data for later analysis.  
   
