@@ -92,7 +92,8 @@ selectedfeatures <- grep("Mean|Std",names(dataset), value=T)
 dataset <- dataset[,c("activity","subject_id",selectedfeatures)]
 
 # 6. Create an tidy data set '.txt' file with the average of each variable for each activity
-dataMelt <- melt(dataset,id=c("activity","subject_id"),measure.vars=selectedfeatures)
-tidyData <- ddply(dataMelt,.(subject_id,activity,variable),summarize,average=mean(value))
+#dataMelt <- melt(dataset,id=c("activity","subject_id"),measure.vars=selectedfeatures)
+#tidyData <- ddply(dataMelt,.(subject_id,activity,variable),summarize,average=mean(value))
+tidyData <- ddply(dataset,.(subject_id,activity),average=mean(selectedfeatures))
 
 write.table(tidyData,"tidydata.txt",row.name=FALSE)
